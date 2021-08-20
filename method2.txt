@@ -1,0 +1,2 @@
+1. download model from tfhub and extract in folder 'hub-cp'.
+2. run command "python -m tf2onnx.convert --saved-model hub-cp  --tag train --opset 13 --output model.onnx"

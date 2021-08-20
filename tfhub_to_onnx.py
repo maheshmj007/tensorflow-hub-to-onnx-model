@@ -11,6 +11,6 @@ model = tf.keras.Sequential([
     ])
 model.build((None,)+IMAGE_SIZE+(3,))
 
-
+# model.save('run1')
 onnx_model = onnxmltools.convert_keras(model, target_opset=6)
 keras2onnx.save_model(onnx_model, 'model.onnx')
